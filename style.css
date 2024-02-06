@@ -10,6 +10,10 @@
   background: linear-gradient(90deg, #bca7ab, #b8a0a4, #946971);
 }
 
+body {
+  margin: 10px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
