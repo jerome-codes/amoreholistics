@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-* {
+* ::after,
+* ::before {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
-  height: 100vh;
   background: linear-gradient(90deg, #bca7ab, #b8a0a4, #946971);
 }
 
@@ -330,6 +329,54 @@ h2 {
 @media (max-width: 370px) {
   .container {
     flex-direction: column;
+  }
+
+  .about_container {
+    flex-direction: column-reverse;
+  }
+
+  .bio_container {
+    flex-direction: column;
+  }
+
+  .stacked_imgs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .textbox_left,
+  .textbox_right {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 8px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .textbox_left,
+  .textbox_right {
     width: 100%;
   }
 
@@ -341,42 +388,6 @@ h2 {
     flex-direction: column;
   }
 
-  .stacked_imgs {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  h1 {
-    font-size: 24px;
-    font-weight: 900;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  p {
-    font-size: 8px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .about_container {
-    flex-direction: column-reverse;
-  }
-
-  .bio_container {
-    flex-direction: column;
-  }
-
   .aroma_container {
     flex-direction: column-reverse;
   }
@@ -390,17 +401,20 @@ h2 {
     font-size: 24px;
     font-weight: 900;
     text-align: center;
+    width: 100%;
   }
 
   h2 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+    width: 100%;
   }
 
   p {
     font-size: 10px;
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -409,6 +423,11 @@ h2 {
     flex-direction: column;
   }
 
+  .textbox_left,
+  .textbox_right {
+    width: 100%;
+  }
+
   .about_container {
     flex-direction: column-reverse;
   }
@@ -430,17 +449,20 @@ h2 {
     font-size: 28px;
     font-weight: 900;
     text-align: center;
+    width: 100%;
   }
 
   h2 {
     font-size: 24px;
     font-weight: 600;
     text-align: center;
+    width: 100%;
   }
 
   p {
     font-size: 12px;
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -448,15 +470,18 @@ h2 {
   h1 {
     font-size: 36px;
     font-weight: 900;
+    width: 100%;
   }
 
   h2 {
     font-size: 28px;
     font-weight: 600;
+    width: 100%;
   }
 
   p {
     font-size: 20px;
+    width: 100%;
   }
 }
 
